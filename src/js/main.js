@@ -1,13 +1,5 @@
-// cмена актива в бургер меню 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuItems = document.querySelectorAll('.menu-items > li');
-  
-    menuItems.forEach(function(item) {
-      item.addEventListener('click', function() {
-        menuItems.forEach(function(i) {
-          i.classList.remove('active');
-        });
-        this.classList.add('active');
-      });
-    });
-  });
+const listNumber = document.querySelectorAll(".whatDo__list li h6");
+
+listNumber.forEach((n, index) => {
+  n.setAttribute('data-before', "0" + (index + 1));
+})
