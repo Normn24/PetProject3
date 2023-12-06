@@ -94,10 +94,77 @@ ul, li {
   }
 }
 
+
+// Client Section
+.clients{
+  padding: 50px 0;
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+  & h2{
+    color: #252525;
+    // font-family: Gilroy;
+    text-align: center;
+    font-size: 212px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 8.48px;
+    text-transform: uppercase;
+  }
+}
+
+.clients__list{
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+  margin: 50px 70px;
+
+  & li{
+    width: 387px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+
+    & h6{
+      color: #333;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    & p{
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+}
+
+.clients__name{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+  & h3{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  & p{
+    margin-top: 10px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .whatDo{
-    background-size: cover;
-    height: 830px;
+    background-size: 1228px 795px;
+    background-position: top center;
+    height: 1830px;
 
     & h2{
       margin: 860px auto 50px;
@@ -109,16 +176,33 @@ ul, li {
     width: 708px;
     margin: 0 auto;
   }  
+
+
+  .clients{
+    & h2{
+      font-size: 111px;
+    }
+  }
+
+  .clients__list{
+    margin: 30px;
+
+    & li{
+      width: auto;
+      padding: 40px 10px;
+    }
+  }
 }
 
 
 @media screen and (min-width: 326px) and (max-width: 768px) {
   .whatDo{
-    background-size: cover;
-    height: 498px;
+    background-size: 828px 595px;
+    background-position: top center;
+    height: 1750px;
 
     & h2{
-      margin: 518px auto 30px;
+      margin: 618px auto 30px;
       font-size: 60px;
     }
   }
@@ -135,4 +219,19 @@ ul, li {
       font-size: 30px;
     }
   }  
+
+  .clients{
+    & h2{
+      font-size: 60px;
+    }
+  }
+
+  .clients__list{
+    margin: 30px;
+
+    & li{
+      width: auto;
+      padding: 40px 0;
+    }
+  }
 }
