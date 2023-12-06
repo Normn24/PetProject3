@@ -123,7 +123,7 @@
     > p {
         color: #252525;
         font-family: "Gilroy", sans-serif;
-        font-size: 62px;
+        font-size: 56px;
         font-weight: 300;
         line-height: normal;
         width: 1215px;
@@ -131,7 +131,7 @@
         > span {
             color: #252525;
             font-family: "Gilroy", sans-serif;
-            font-size: 62px;
+            font-size: 56px;
             font-weight: 800;
             line-height: normal;
         }
@@ -168,6 +168,7 @@
 
 .logos {
     > p{
+        margin-top: 70px;
         border-top: 1px solid black ;
         width: 100%;
         margin-bottom: 70px;
@@ -177,7 +178,108 @@
         margin-right: 70px;
     }
     .logo-img > a > img {
-        margin-left: 20px;
-        margin-bottom: 70px;
+        margin-left: 30px;
+    }
+}
+
+// SELECTED WORK 
+
+.selectedwork {
+    > h2 {
+        color: #252525;
+        text-align: center;
+        font-family: 'Gilroy', sans-serif;
+        font-size: 200px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+    .container {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 0px 40px;
+
+        > div {
+            width: 567px;
+            height: 567px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 70px;
+
+            > h2 {
+                color: #000;
+                font-family: 'Gilroy-Bold', sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            
+            .buttons {
+                .first-btn, .second-btn, .third-btn {
+                    border: none;
+                    border-radius: 50px;
+                    font-family: "Gilroy-Medium", sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+                .first-btn{
+                    background: #FFF;
+                    width: 176px;
+                    height: 56px;
+                    margin: 30px 30px 0px 0px;
+                    color: #252525;
+                    
+                }
+                .second-btn {
+                    background: #FFF;
+                    width: 104px;
+                    height: 52px;
+                    color: #252525;
+                    
+                }
+    
+                .third-btn {
+                    background: #252525;
+                    width: 162px;
+                    height: 53px;
+                    color: #FFF;
+                    text-transform: capitalize;
+                    position: relative;
+                    top: 436px;
+                    left: 86px;
+
+                    > img {
+                        width: 16px;
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+    .container img {
+        width: 100%; 
+    }
+
+    .allwork-btn {
+        align-items: center;
+        border: none;
+        width: 167px;
+        height: 57px;
+        border-radius: 50px;
+        background: #FFF;
+        color: #252525;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 }
