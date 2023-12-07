@@ -281,6 +281,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin-top: 50px;
     }
 }
 
@@ -307,11 +308,11 @@
 
     .first-our-team-container {
         display: flex;
-        margin-left: 70px;
         gap: 40px;
         flex-wrap: wrap;
+        justify-content: center;
         
-        > div > h3 {
+        > div > a > h3 {
             color: #333;
             font-family: 'Gilroy', sans-serif;
             font-size: 25px;
@@ -319,13 +320,14 @@
             text-transform: uppercase;
             margin-bottom: 2px;
         }
-        > div > p {
+        > div > a >  p {
             color: #333;
             font-family: 'Gilroy-Medium', system-ui;
             font-size: 19px;
             font-weight: 400;
             margin-bottom: 15px ;
         }
+
 
         .join-team {
             display: flex;
@@ -477,16 +479,18 @@
 //    our team 
 
    .our-team {
-        >h2 {
+        > h2 {
             font-size: 150px;
         }
         .first-our-team-container {
-
-
+            margin: 0;
+            justify-content: center;         
             .join-team > h2 {
                 width: 705px;
                 font-size: 60px;
             }
+
+        
         }
         
    }
