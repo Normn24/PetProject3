@@ -8,7 +8,7 @@ listNumber.forEach((n, index) => {
 function borderList() {
   const listLine = document.querySelectorAll(".clients__list li");
   listLine.forEach((element, index) => {
-    if (window.innerWidth > 1200) {
+    if (window.innerWidth > 1600) {
       if (index !== 5) {
         element.style.borderBottom = "none";
       }
