@@ -165,8 +165,9 @@ ul, li {
 .contact{
   display: flex;
   gap: 40px;
-  margin: 50px 70px 100px;
-
+  margin: 50px 0 100px;
+  padding: 50px 70px 0;
+  border-top: 1px solid #252525;
   & h2{
     width: 50%;
     color: #333;
@@ -291,8 +292,8 @@ ul, li {
   .contact{
     text-align: center;
     flex-direction: column;
-    margin: 30px 30px 50px;
-  
+    margin: 30px 0 50px;
+    padding: 0 30px;
     & h2{
       width: 100%;
     }
@@ -311,6 +312,364 @@ ul, li {
     padding: 45px 30px;
   }
 
+}
+
+
+// PC 
+
+// Header 
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 40px 70px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        a > h2 {
+            margin-left: 15px;
+            color: #000;
+            text-align: center;
+            font-family: 'Gilroy', system-ui;
+            font-size: 35px;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -0.7px;
+
+            > span {
+                text-transform: uppercase;
+                color: #000;
+                font-family: 'Gilroy-Medium', sans-serif;
+                font-size: 35px;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.7px;
+            }
+            > span::after {
+                content: '®';
+                font-size: 21px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .menu > .menu-items > li > a {
+        text-transform: uppercase;
+        color: #252525;
+        text-align: center;
+        font-family: Gilroy-SemiBold;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+// header-content 
+
+.header_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+
+    > h1 {
+        color: #252525;
+        text-align: center;
+        font-family: 'Gilroy-SemiBold', sans-serif;
+        font-size: 150px;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    > h2 {
+        color: #252525;
+        font-family: 'Gilroy', system-ui;
+        font-size: 150px;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+}
+
+.header-img > img {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-bottom: 70pxz;
+    > p {
+        color: #252525;
+        font-family: "Gilroy", sans-serif;
+        font-size: 56px;
+        font-weight: 300;
+        line-height: normal;
+        width: 1215px;
+
+        > span {
+            color: #252525;
+            font-family: "Gilroy", sans-serif;
+            font-size: 56px;
+            font-weight: 800;
+            line-height: normal;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        width: 476px;
+        height: 110px;
+        padding: 60px 70px 60px 0px;
+        flex-direction: column;
+        align-items: flex-end;
+        background: #252525;
+        margin-bottom: 70px;
+
+        > p {
+            color: #FFF;
+            text-align: right;
+            font-family: 'Gilroy-Medium', sans-serif;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        > div > a {
+            width: 50px;
+            height: 50px;
+            padding-left: 20px;
+        }
+    }
+
+}
+
+.logos {
+    > p{
+        margin-top: 70px;
+        border-top: 1px solid black ;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .logo-img {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .logo-img > a > img {
+        margin-left: 30px;
+    }
+}
+
+// SELECTED WORK 
+
+.selectedwork {
+    > h2 {
+        color: #252525;
+        text-align: center;
+        font-family: 'Gilroy', system-ui;
+        font-size: 200px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+
+    .container {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 0px 40px;
+
+        > div {
+            width: 567px;
+            height: 567px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 70px;
+
+            > h2 {
+                color: #000;
+                font-family: 'Gilroy-Bold', sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            
+            .buttons {
+                .first-btn, .second-btn, .third-btn {
+                    border: none;
+                    border-radius: 50px;
+                    font-family: "Gilroy-Medium", sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+                .first-btn{
+                    background: #FFF;
+                    width: 176px;
+                    height: 56px;
+                    margin: 30px 30px 0px 0px;
+                    color: #252525;
+                    
+                }
+                .second-btn {
+                    background: #FFF;
+                    width: 104px;
+                    height: 52px;
+                    color: #252525;
+                    
+                }
+    
+                .third-btn {
+                    background: #252525;
+                    width: 162px;
+                    height: 53px;
+                    color: #FFF;
+                    text-transform: capitalize;
+                    position: relative;
+                    top: 436px;
+                    left: 86px;
+
+                    > img {
+                        width: 16px;
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+    .container img {
+        width: 100%; 
+    }
+
+    .allwork-btn {
+        align-items: center;
+        border: none;
+        width: 167px;
+        height: 57px;
+        border-radius: 50px;
+        background: #FFF;
+        color: #252525;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+// our-team
+
+.our-team {
+    margin-bottom: 50px;
+    > h2 {
+        margin: 50px 0px;
+        color: #252525;
+        font-family: 'Gilroy', system-ui;
+        font-size: 212px;
+        font-weight: 300;
+        letter-spacing: 8.48px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first-our-team-container {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        > div > a > h3 {
+            color: #333;
+            font-family: 'Gilroy', sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        > div > a >  p {
+            color: #333;
+            font-family: 'Gilroy-Medium', system-ui;
+            font-size: 19px;
+            font-weight: 400;
+            margin-bottom: 15px ;
+        }
+
+
+        .join-team {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            > h4 {
+                color: #333;
+                font-family: 'Gilroy-Regular', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+            > h2 { 
+                color: #333;
+                font-family: 'Gilroy-Bold', sans-serif;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+                width: 870px;
+            }
+
+            .find-job-btn {
+                align-items: center;
+                border: none;
+                width: 167px;
+                height: 57px;
+                border-radius: 50px;
+                background: #252525;
+                color: #FFF;
+                font-family: 'Gilroy-Medium', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                cursor: pointer;
+
+                > img {
+                    width: 16px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .our-team-contacts{
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+    }
 
 }
 
@@ -393,3 +752,277 @@ ul, li {
     gap: 20px;
   }
 }
+// TABLET (768-1200px) 
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    // header
+   .header_name {
+        > h1, > h2 {
+            font-size: 120px;
+        }       
+   }
+
+   .description {
+        flex-wrap: wrap;
+        margin: 0;
+    > p {
+        text-align: center;
+        width: 900px;
+        font-size: 52px;
+        margin: 0 auto;
+    }
+    .contacts {
+        margin-top: 30px;
+        width: 100%;
+    }
+   }
+
+   .logos {
+        > p {
+            display: none;
+            
+        }
+        .logo-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 989px;
+        }
+}
+
+
+
+
+//    selected work 
+
+   .selectedwork {
+        >h2 {
+            font-size: 120px;
+        }
+
+        .container{
+            
+            gap: 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .first-block, .last-block {
+                height: 200px;
+                margin: 0;
+            }
+            > div {
+                width: 657px;
+                
+
+                .buttons {
+
+                    .third-btn {
+                        top: 69px;
+                        left: 176px;
+                    }
+                }
+
+            }
+
+            .diva {
+                order: -1 ;
+            }
+
+            
+
+            
+            
+        }
+   }
+
+
+
+
+
+
+
+
+//    our team 
+
+   .our-team {
+        > h2 {
+            font-size: 150px;
+        }
+        .first-our-team-container {
+            margin: 0;
+            justify-content: center;         
+            .join-team > h2 {
+                width: 705px;
+                font-size: 60px;
+            }
+
+        
+        }
+        
+   }
+   
+}
+
+@media screen and (max-width: 767px)  {
+    .header-menu {
+        margin: 20px 20px;
+    }
+    .logo {
+        h2, span {
+            display: none;
+            
+        }
+    }
+    .header_name {
+        > h1, > h2 {
+            font-size: 57px;
+        }       
+   }
+
+   .description {
+        flex-wrap: wrap;
+        margin: 0;
+        > p {
+            text-align: center;
+            width: 400px;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+
+        > p > span {
+            font-size: 30px;
+        }
+        .contacts {
+            margin-top: 30px;
+            width: 100%;
+
+            > div > a > img {
+                width: 39px;
+            }
+        }
+   } 
+.logos {
+        > p {
+            display: none;
+            
+        }
+        .logo-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 989px;
+        }
+}
+
+    
+
+
+//    selected work 
+.selectedwork {
+    >h2 {
+        font-size: 63px;
+        margin-bottom: 50px;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 20px;
+
+        .first-block, .last-block {
+            height: 190px;
+            margin: 0;
+            
+        }
+        > div {
+            width: 310px;
+            height: 365px;
+            gap: 10px;
+            margin: 0;
+
+            > a > img {
+                width: 310px;
+            }
+            .buttons {
+                .first-btn {
+                    margin: 0;
+                    margin-right: 15px;
+                }
+                .third-btn {
+                    top: 24px;
+                    left: 139px;
+                }
+            }
+
+        }
+
+        .diva {
+            margin: 0;
+            order: -1 ;
+        } 
+        
+    }
+    .allwork-btn {
+        width: 320px;
+    }
+}
+
+
+
+
+
+
+
+
+//    our team 
+
+.our-team {
+    > h2 {
+        font-size: 80px;
+    }
+    .first-our-team-container {
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;      
+        
+        .our-team-photo {
+            width: 310px;
+        }
+        .our-team-contacts {
+            justify-content: center;
+        }
+        .join-team {
+            align-items: center;
+            text-align: center;
+
+            > h2 {
+                font-size: 28px;
+                max-width: 320px;
+                font-weight: bold;
+            }
+
+            >h4 {
+                font-size: 24px;
+            }
+
+            .find-job-btn {
+                margin-top: 5px;
+                width: 320px;
+                height: 53px;
+            }
+
+            
+        }
+        
+
+    
+      }
+    
+    }
+  }
