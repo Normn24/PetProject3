@@ -45,7 +45,6 @@ ul, li {
     font-size: 147px;
     font-weight: 300;
     text-transform: uppercase;
-    font-family: 'Gilroy',system-ui;
   }
 }
 
@@ -65,10 +64,9 @@ ul, li {
     color: #000;
     font-size: 44px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 48px;
     text-transform: uppercase;
-    font-family: 'Gilroy-Light',sans-serif;
   }
 
   & h6::before{
@@ -77,9 +75,8 @@ ul, li {
     font-size: 44px;
     font-style: normal;
     font-weight: 300;
-    line-height: 48px;
+    line-height: 48px; /* 109.091% */
     text-transform: uppercase;
-    font-family: 'Gilroy-Light',sans-serif;
     margin-right: 10px;
   }
 
@@ -105,14 +102,13 @@ ul, li {
   border-bottom: 1px solid #252525;
   & h2{
     color: #252525;
-    font-family: "Gilroy",system-ui;
+    // font-family: Gilroy;
     text-align: center;
     font-size: 212px;
     font-style: normal;
     font-weight: 200;
     letter-spacing: 8.48px;
     text-transform: uppercase;
-    
   }
 }
 
@@ -136,7 +132,6 @@ ul, li {
       font-size: 30px;
       font-style: normal;
       font-weight: 800;
-      font-family: "Gilroy",system-ui;
     }
 
     & p{
@@ -144,7 +139,6 @@ ul, li {
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      
     }
   }
 }
@@ -172,12 +166,12 @@ ul, li {
   display: flex;
   gap: 40px;
   margin: 50px 0 100px;
-  padding: 50px 70px 0;
+  padding: 30px 70px;
   border-top: 1px solid #252525;
   & h2{
     width: 50%;
     color: #333;
-    font-family: "Gilroy",system-ui;
+    // font-family: Gilroy;
     font-size: 135px;
     font-style: normal;
     font-weight: 200;
@@ -194,7 +188,7 @@ ul, li {
 
   & h6{
     color: #252525;
-    font-family: "Gilroy-Bold", sans-serif;
+    // font-family: Gilroy-Bold;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -204,7 +198,7 @@ ul, li {
 
   & p{
     color: #252525;
-    font-family: "Gilroy-Medium", sans-serif;
+    // font-family: Gilroy-Medium;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -241,7 +235,7 @@ ul, li {
 
   & p{
     color: #333;
-    font-family: 'Gilroy-Regular', sans-serif;
+    // font-family: Gilroy-SemiBold;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -257,6 +251,70 @@ ul, li {
   display: flex;
   gap: 10px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .whatDo{
+    background-size: 1228px 795px;
+    background-position: top center;
+    height: 1830px;
+
+    & h2{
+      margin: 860px auto 50px;
+      font-size: 127px;
+    }
+  }
+
+  .whatDo__list{
+    width: 708px;
+    margin: 0 auto;
+  }  
+
+
+  .clients{
+    & h2{
+      font-size: 111px;
+    }
+  }
+
+  .clients__list{
+    margin: 30px;
+
+    & li{
+      width: auto;
+      padding: 40px 10px;
+    }
+  }
+
+
+
+
+  .contact{
+    text-align: center;
+    flex-direction: column;
+    margin: 30px 0 50px;
+    padding: 0 30px;
+    & h2{
+      width: 100%;
+    }
+  }
+  
+  .contact__content{
+    width: 100%;
+    align-items: center;
+  
+    & button{
+      padding: 15px 30px;
+    }
+  }
+
+  .footer{
+    padding: 45px 30px;
+  }
+
+}
+
+
 // PC 
 
 // Header 
@@ -304,9 +362,9 @@ ul, li {
         text-transform: uppercase;
         color: #252525;
         text-align: center;
-        font-family: 'Gilroy-SemiBold', sans-serif;
+        font-family: Gilroy-SemiBold;
         font-size: 25px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: normal;
     }
 }
@@ -352,6 +410,7 @@ ul, li {
     display: flex;
     justify-content: space-between;
     margin-left: 70px;
+    margin-bottom: 70pxz;
     > p {
         color: #252525;
         font-family: "Gilroy", sans-serif;
@@ -399,19 +458,19 @@ ul, li {
 }
 
 .logos {
+    > p{
         margin-top: 70px;
         border-top: 1px solid black ;
         width: 100%;
-        padding: 70px 0;
-        border-bottom: 1px solid black ;
-    
-    .logo-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        margin-bottom: 70px;
     }
-    
+    .logo-img {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .logo-img > a > img {
+        margin-left: 30px;
+    }
 }
 
 // SELECTED WORK 
@@ -428,15 +487,15 @@ ul, li {
     }
 
     .container {
+        margin-top: 50px;
         display: flex;
         flex-wrap: wrap; 
         justify-content: center; 
         gap: 0px 40px;
-        max-width: 1500px;
-        margin: 50px auto 0;
+
         > div {
-            width: 467px;
-            height: 467px;
+            width: 567px;
+            height: 567px;
             display: flex;
             flex-direction: column;
             margin-bottom: 70px;
@@ -481,8 +540,8 @@ ul, li {
                     color: #FFF;
                     text-transform: capitalize;
                     position: relative;
-                    top: 283px;
-                    left: 305px;
+                    top: 436px;
+                    left: 86px;
 
                     > img {
                         width: 16px;
@@ -543,15 +602,7 @@ ul, li {
         gap: 40px;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 1500px;
-        margin: 0 auto;
-        > div  {
-            width: 315px;
-
-            > a > img {
-                width: 100%;
-            }
-        }
+        
         > div > a > h3 {
             color: #333;
             font-family: 'Gilroy', sans-serif;
@@ -569,12 +620,10 @@ ul, li {
         }
 
 
-
         .join-team {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            width: 675px;
             > h4 {
                 color: #333;
                 font-family: 'Gilroy-Regular', sans-serif;
@@ -587,12 +636,12 @@ ul, li {
             > h2 { 
                 color: #333;
                 font-family: 'Gilroy-Bold', sans-serif;
-                font-size: 50px;
+                font-size: 64px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
                 text-transform: uppercase;
-                max-width: 740px;
+                width: 870px;
             }
 
             .find-job-btn {
@@ -623,66 +672,89 @@ ul, li {
     }
 
 }
+
+
+@media screen and (min-width: 326px) and (max-width: 768px) {
+  .whatDo{
+    background-size: 828px 595px;
+    background-position: top center;
+    height: 1750px;
+
+    & h2{
+      margin: 618px auto 30px;
+      font-size: 60px;
+    }
+  }
+
+  .whatDo__list{
+    width: auto;
+    margin: 0 20px;
+
+    & h6{
+      font-size: 30px;
+    }
+
+    & h6::before{
+      font-size: 30px;
+    }
+  }  
+
+  .clients{
+    & h2{
+      font-size: 60px;
+    }
+  }
+
+  .clients__list{
+    margin: 30px;
+
+    & li{
+      width: auto;
+      padding: 40px 0;
+    }
+  }
+
+
+  .contact{
+    text-align: center;
+    flex-direction: column;
+    padding: 30px 30px 50px;
+
+    & h2{
+      font-weight: 300;
+      font-size: 60px;
+      width: 100%;
+    }
+  }
+  
+  .contact__content{
+    width: 100%;
+    align-items: center;
+  
+    & h6{
+      font-size: 30px;
+    }
+  
+    & p{
+      font-size: 20px;
+    }
+  
+    & button{
+      justify-content: center;
+      width: 100%;
+      padding: 15px 30px;
+    }
+  }
+
+
+  .footer{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 // TABLET (768-1200px) 
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .whatDo{
-        background-size: 1228px 795px;
-        background-position: top center;
-        height: 1830px;
-    
-        & h2{
-          margin: 860px auto 50px;
-          font-size: 127px;
-        }
-      }
-    
-      .whatDo__list{
-        width: 708px;
-        margin: 0 auto;
-      }  
-    
-    
-      .clients{
-        & h2{
-          font-size: 111px;
-        }
-      }
-    
-      .clients__list{
-        margin: 30px;
-    
-        & li{
-          width: auto;
-          padding: 40px 10px;
-        }
-      }
-    
-    
-    
-    
-      .contact{
-        text-align: center;
-        flex-direction: column;
-        margin: 30px 0 50px;
-        padding: 0 30px;
-        & h2{
-          width: 100%;
-        }
-      }
-      
-      .contact__content{
-        width: 100%;
-        align-items: center;
-      
-        & button{
-          padding: 15px 30px;
-        }
-      }
-    
-      .footer{
-        padding: 45px 30px;
-      }
     // header
    .header_name {
         > h1, > h2 {
@@ -706,9 +778,17 @@ ul, li {
    }
 
    .logos {
-        margin: 0;
-        padding-top: 0;
-        border-top: none;
+        > p {
+            display: none;
+            
+        }
+        .logo-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 989px;
+        }
 }
 
 
@@ -734,7 +814,6 @@ ul, li {
             }
             > div {
                 width: 657px;
-                height: 657px;
                 
 
                 .buttons {
@@ -787,82 +866,6 @@ ul, li {
 }
 
 @media screen and (max-width: 767px)  {
-    .whatDo{
-        background-size: 828px 595px;
-        background-position: top center;
-        height: 1750px;
-    
-        & h2{
-          margin: 618px auto 30px;
-          font-size: 60px;
-        }
-      }
-    
-      .whatDo__list{
-        width: auto;
-        margin: 0 20px;
-    
-        & h6{
-          font-size: 30px;
-        }
-    
-        & h6::before{
-          font-size: 30px;
-        }
-      }  
-    
-      .clients{
-        & h2{
-          font-size: 60px;
-        }
-      }
-    
-      .clients__list{
-        margin: 30px;
-    
-        & li{
-          width: auto;
-          padding: 40px 0;
-        }
-      }
-    
-    
-      .contact{
-        text-align: center;
-        flex-direction: column;
-        padding: 30px 30px 50px;
-    
-        & h2{
-          font-weight: 300;
-          font-size: 60px;
-          width: 100%;
-        }
-      }
-      
-      .contact__content{
-        width: 100%;
-        align-items: center;
-      
-        & h6{
-          font-size: 30px;
-        }
-      
-        & p{
-          font-size: 20px;
-        }
-      
-        & button{
-          justify-content: center;
-          width: 100%;
-          padding: 15px 30px;
-        }
-      }
-    
-    
-      .footer{
-        flex-direction: column;
-        gap: 20px;
-      }
     .header-menu {
         margin: 20px 20px;
     }
@@ -901,10 +904,17 @@ ul, li {
         }
    } 
 .logos {
-        border-top: none;
-        margin: 0;
-        padding-top: 0;
-        
+        > p {
+            display: none;
+            
+        }
+        .logo-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 989px;
+        }
 }
 
     
@@ -990,7 +1000,6 @@ ul, li {
         .join-team {
             align-items: center;
             text-align: center;
-            width: auto;
 
             > h2 {
                 font-size: 28px;
